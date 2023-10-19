@@ -14,6 +14,7 @@ public class Book {
     private Long id;
     @Column(unique = true)
     private String isbn;
+    private String name;
     private String author;
     private String publisher;
     private LocalDate releaseDate;
@@ -33,6 +34,14 @@ public class Book {
 
     public void setIsbn(String isbn) {
         this.isbn = isbn;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getAuthor() {
