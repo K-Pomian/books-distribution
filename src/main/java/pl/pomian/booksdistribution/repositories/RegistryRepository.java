@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 import pl.pomian.booksdistribution.repositories.entities.Registry;
 
 @Repository
-public interface RegisteryRepository extends JpaRepository<Registry, Long> {
+public interface RegistryRepository extends JpaRepository<Registry, Long> {
 }
