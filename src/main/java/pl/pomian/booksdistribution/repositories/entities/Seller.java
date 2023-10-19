@@ -13,7 +13,7 @@ public class Seller {
     private Long id;
     private String name;
     private String website;
-    @OneToMany
+    @ManyToMany
     private Set<Book> availableBooks;
     @OneToMany(mappedBy = "seller")
     private Set<Registry> registries;
